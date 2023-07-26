@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remix Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- style CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="side-bar">
+        <div class="top-bar">
+          <i class="ri-close-fill close" onclick="toggle_()"></i>
+          <div class="logo">
+            <img src="img/logo.png" alt="" />
+            <div class="brand-name">Pine Leaf</div>
+          </div>
+          <div class="search search2">
+            <i class="ri-search-2-line"></i>
+            <p>Search Here</p>
+          </div>
+          <div class="pages">
+            <div>
+              <a class="page" href="index.html">
+                <i class="ri-dashboard-fill"></i>
+                <p>Dashboard</p>
+              </a>
+            </div>
+            <div>
+              <a class="page" href="properties.html">
+                <i class="ri-community-fill"></i>
+                <p>Properties</p>
+              </a>
+            </div>
+            <div>
+              <a class="page" href="transaction.html">
+                <i class="ri-file-list-line"></i>
+                <p>Transaction</p>
+              </a>
+            </div>
+            <div>
+              <a class="page active" href="profile.html">
+                <i class="ri-user-3-fill"></i>
+                <p>Profile</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-bar">
+          <div class="log-out page">
+            <i class="ri-logout-circle-r-line"></i>
+            <p>Log Out</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="head">
+          <i class="ri-menu-line burger" onclick="burger_()"></i>
+          <div class="search">
+            <i class="ri-search-2-line"></i>
+            <p>Search Here</p>
+          </div>
+          <div class="notify">
+            <i class="ri-notification-3-fill"></i>
+            <img src="img/Ellipse 28.png" alt="" />
+          </div>
+        </div>
+
+        <div class="main-body t-details">
+          <a href="profile.html" style="display: flex; gap: 10px;">
+            <i class="ri-arrow-left-s-line" style="font-size: 24px;"></i>
+            <h3>Edit Profile</h3>
+          </a>
+        </div>
+
+
+        <div class="edit-page">
+            <div class="edits">
+                <img src="img/Ellipse 28.png" alt="">
+                <div class="edit-photo">
+                    <p>Photo Profile </p>
+                    <div class="upload">
+                        <i class="ri-upload-line"></i>
+                        Upload new photo
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="edit-details">
+                    <div class="edit-name">
+                        <p>Full Name <br> <span>Your Full Name</span></p>
+                        <input type="text" placeholder="Rusmus Hujlund">
+                    </div>
+                    <div class="edit-name">
+                        <p>User Name <br> <span>Your User Name</span></p>
+                        <input type="text" placeholder="R_Hujlund">
+                    </div>
+                    <div class="edit-address">
+                        <p>Address <br> <span>Your Address</span></p>
+                        <input type="text" placeholder="123| Island Lagos">
+                    </div>
+                    <div class="edit-mail">
+                        <p>Email <br> <span>Your Email Address</span></p>
+                        <input type="email" placeholder="r_hujlund.co.uk">
+                    </div>
+                    <div class="edit-call">
+                        <p>Phone Number <br> <span>Your Phone Number</span></p>
+                        <input type="text" placeholder="+123 345-67-890">
+                    </div>
+                    <div class="edit-call">
+                        <p>Account Number <br> <span>Your Account Number</span></p>
+                        <input type="text" placeholder="+123 345-67-890">
+                    </div>
+                </div>
+                <button>Save Changes</button>
+            </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <script>
+        const sideBar = document.querySelector('.side-bar');
+
+        const burger = document.querySelector('.burger')
+        const toggle = document.querySelector('.toggle')
+
+
+
+        function burger_() {
+          sideBar.style.display = 'block';
+        }
+        function toggle_() {
+          sideBar.style.display = 'none';
+        }
+
+      </script>
+  </body>
+</html>

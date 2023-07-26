@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remix Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- style CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="side-bar">
+        <div class="top-bar">
+          <i class="ri-close-fill close" onclick="toggle_()"></i>
+          <div class="logo">
+            <img src="img/logo.png" alt="" />
+            <div class="brand-name">Pine Leaf</div>
+          </div>
+          <div class="search search2">
+            <i class="ri-search-2-line"></i>
+            <p>Search Here</p>
+          </div>
+          <div class="pages">
+            <div>
+              <a class="page" href="index.html">
+                <i class="ri-dashboard-fill"></i>
+                <p>Dashboard</p>
+              </a>
+            </div>
+            <div>
+              <a class="page" href="properties.html">
+                <i class="ri-community-fill"></i>
+                <p>Properties</p>
+              </a>
+            </div>
+            <div>
+              <a class="page" href="transaction.html">
+                <i class="ri-file-list-line"></i>
+                <p>Transaction</p>
+              </a>
+            </div>
+            <div>
+              <a class="page  active" href="profile.html">
+                <i class="ri-user-3-fill"></i>
+                <p>Profile</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-bar">
+          <div class="log-out page">
+            <i class="ri-logout-circle-r-line"></i>
+            <p>Log Out</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="head">
+          <i class="ri-menu-line burger" onclick="burger_()"></i>
+          <div class="search">
+            <i class="ri-search-2-line"></i>
+            <p>Search Here</p>
+          </div>
+          <div class="notify">
+            <i class="ri-notification-3-fill"></i>
+            <img src="img/Ellipse 28.png" alt="" />
+          </div>
+        </div>
+
+        <div class="main-body t-details">
+          <h3>Profile</h3>
+        </div>
+
+
+        <div class="profile-body">
+            <div class="p-details">
+                <div class="cover">
+                    <div class="photo">
+                        <i class="ri-camera-fill"></i>
+                        <p>Choose Photo</p>
+                    </div>
+                    <img src="img/Ellipse 28.png" alt="">
+                </div>
+                <div class="p-detail">
+                    <div class="name">
+                        <div>
+                          <p class="user">Rusmus Hujlund</p>
+                        <p>Joined 4 months ago</p>
+                        </div>
+                        <a class="edit" href="edit.html">
+                          
+                          <i class="ri-edit-2-fill"></i>
+                          <p>Edit</p>
+                        
+                        </a>
+                    </div>
+                    <div class="address">
+                       
+                          <div class="add">
+                            <i class="ri-user-3-fill"></i>
+                            <p>R_Hujlund <br> <span>username</span></p>
+                        </div> 
+                        <div class="add">
+                            <i class="ri-map-pin-2-fill"></i>
+                            <p>123| island Lagos <br> <span>Address</span></p>
+                        </div> 
+                            <div class="call">
+                                <i class="ri-phone-fill"></i>
+                                <p>+234 -567-78-345 <br> <span>Call</span></p>
+                            </div>
+                            <div class="mail">
+                                <i class="ri-mail-fill"></i>
+                                <p>r_hujlund.co.uk <br> <span>Mail</span></p>
+                            </div>
+                            <div class="mail">
+                              <i class="ri-bank-line"></i>
+                                <p>01234567890<br> <span>Account Number</span></p>
+                            </div>
+                        </div>
+                    
+                </div>
+
+                
+              </div>
+
+      </div>
+
+
+      <script>
+        const sideBar = document.querySelector('.side-bar');
+
+        const burger = document.querySelector('.burger')
+        const toggle = document.querySelector('.toggle')
+
+
+
+        function burger_() {
+          sideBar.style.display = 'block';
+        }
+        function toggle_() {
+          sideBar.style.display = 'none';
+        }
+
+      </script>
+    </section>
+  </body>
+</html>

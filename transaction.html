@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remix Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- style CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="side-bar">
+        <div class="top-bar">
+          <i class="ri-close-fill close" onclick="toggle_()"></i>
+          <div class="logo">
+            <img src="img/logo.png" alt="" />
+            <div class="brand-name">Pine Leaf</div>
+          </div>
+          <div class="search search2">
+            <i class="ri-search-2-line"></i>
+            <p>Search Here</p>
+          </div>
+          <div class="pages">
+            <div>
+              <a class="page" href="index.html">
+                <i class="ri-dashboard-fill"></i>
+                <p>Dashboard</p>
+              </a>
+            </div>
+            <div>
+              <a class="page" href="properties.html">
+                <i class="ri-community-fill"></i>
+                <p>Properties</p>
+              </a>
+            </div>
+            <div>
+              <a class="page active" href="transaction.html">
+                <i class="ri-file-list-line"></i>
+                <p>Transaction</p>
+              </a>
+            </div>
+            <div>
+              <a class="page" href="profile.html">
+                <i class="ri-user-3-fill"></i>
+                <p>Profile</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-bar">
+          <div class="log-out page">
+            <i class="ri-logout-circle-r-line"></i>
+            <p>Log Out</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="head">
+          <i class="ri-menu-line burger" onclick="burger_()"></i>
+          <div class="search">
+            <i class="ri-search-2-line"></i>
+            <p>Search Here</p>
+          </div>
+          <div class="notify">
+            <i class="ri-notification-3-fill"></i>
+            <img src="img/Ellipse 28.png" alt="" />
+          </div>
+        </div>
+
+        <div class="main-body t-details">
+          <h3>Transactions</h3>
+
+          <div class="transactions">
+            <div class="transaction">
+              <div class="trans">
+                <div class="t-img">
+                  <img src="img/img3.jpg" alt="No img" />
+                </div>
+                <div class="t-detail">
+                  <p class="id">ID: 10004136</p>
+                  <p class="land">Star Sun LDGT</p>
+                  <p class="plot">2 Plot</p>
+                  <div class="date">
+                    <i class="ri-calendar-fill"></i>
+                    <p>15 Jan, 2022</p>
+                  </div>
+                  <div class="paid">Paid Off</div>
+                </div>
+              </div>
+
+              <div class="trans">
+                <div class="t-img">
+                  <img src="img/img3.jpg" alt="No img" />
+                </div>
+                <div class="t-detail">
+                  <p class="id">ID: 10004136</p>
+                  <p class="land">Star Sun LDGT</p>
+                  <p class="plot">2 Plot</p>
+                  <div class="date">
+                    <i class="ri-calendar-fill"></i>
+                    <p>15 Jan, 2022</p>
+                  </div>
+                  <div class="paid">Paid Off</div>
+                </div>
+              </div>
+              <div class="trans">
+                <div class="t-img">
+                  <img src="img/img3.jpg" alt="No img" />
+                </div>
+                <div class="t-detail">
+                  <p class="id">ID: 10004136</p>
+                  <p class="land">Star Sun LDGT</p>
+                  <p class="plot">2 Plot</p>
+                  <div class="date">
+                    <i class="ri-calendar-fill"></i>
+                    <p>15 Jan, 2022</p>
+                  </div>
+                  <div class="paid">Paid Off</div>
+                </div>
+              </div>
+
+            </div>
+
+              <div class="view">
+                <h3 id="recent" onclick="recent_()">History</h3>
+                <h3  id="referral" onclick="referral_()">Referral Commision</h3>
+               
+              </div>
+           
+
+      
+
+            <div class="history" id="table1">
+
+              <div class="trans">
+                <div class="t-img">
+                  <img src="img/img2.jpg" alt="No img" />
+                </div>
+                <div class="t-detail">
+                  <p class="id">ID: 10004136</p>
+                  <p class="land">Star Sun LDGT</p>
+                  <p class="plot">2 Plot</p>
+                  <div class="date">
+                    <i class="ri-calendar-fill"></i>
+                    <p>15 Jan, 2022</p>
+                  </div>
+                  <div class="success">Success</div>
+                </div>
+              </div>
+
+              <div class="trans">
+                <div class="t-img">
+                  <img src="img/img2.jpg" alt="No img" />
+                </div>
+                <div class="t-detail">
+                  <p class="id">ID: 10004136</p>
+                  <p class="land">Star Sun LDGT</p>
+                  <p class="plot">2 Plot</p>
+                  <div class="date">
+                    <i class="ri-calendar-fill"></i>
+                    <p>15 Jan, 2022</p>
+                  </div>
+                  <div class="pending">Pending</div>
+                </div>
+              </div>
+
+              <div class="trans">
+                <div class="t-img">
+                  <img src="img/img2.jpg" alt="No img" />
+                </div>
+                <div class="t-detail">
+                  <p class="id">ID: 10004136</p>
+                  <p class="land">Star Sun LDGT</p>
+                  <p class="plot">2 Plot</p>
+                  <div class="date">
+                    <i class="ri-calendar-fill"></i>
+                    <p>15 Jan, 2022</p>
+                  </div>
+                  <div class="fail">Failed</div>
+                </div>
+              </div>
+
+              <div class="trans">
+                <div class="t-img">
+                  <img src="img/img2.jpg" alt="No img" />
+                </div>
+                <div class="t-detail">
+                  <p class="id">ID: 10004136</p>
+                  <p class="land">Star Sun LDGT</p>
+                  <p class="plot">2 Plot</p>
+                  <div class="date">
+                    <i class="ri-calendar-fill"></i>
+                    <p>15 Jan, 2022</p>
+                  </div>
+                  <div class="paid">Paid Off</div>
+                </div>
+              </div>
+
+
+            </div>
+
+
+            <div class="table" id="table2">
+              <div class="title sub-title ">
+                <div class="space">Referrals</div>
+                <p>Generation</p>
+                <p>Commision</p>
+                <p>Status</p>
+              </div>
+
+              <div class="title title-alt ">
+                <div class="image space">
+                  <img src="img/Ellipse 28.png" alt="" />
+                  <span>Lorem ipsum</span>
+                </div>
+                <p>1st</p>
+                <p>600k</p>
+                <p class="paid">Paid</p>
+              </div>
+              <div class="title title-alt ">
+                <div class="image space">
+                  <img src="img/Ellipse 28.png" alt="" />
+                  <span>Lorem ipsum</span>
+                </div>
+                <p>1st</p>
+                <p>600k</p>
+                <p class="paid">Paid</p>
+              </div>
+              <div class="title title-alt ">
+                <div class="image space">
+                  <img src="img/Ellipse 28.png" alt="" />
+                  <span>Lorem ipsum</span>
+                </div>
+                <p>1st</p>
+                <p>600k</p>
+                <p class="paid">Paid</p>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <script>
+      const sideBar = document.querySelector('.side-bar');
+
+      const burger = document.querySelector('.burger')
+      const toggle = document.querySelector('.toggle')
+
+
+
+      function burger_() {
+        sideBar.style.display = 'block';
+      }
+      function toggle_() {
+        sideBar.style.display = 'none';
+      }
+
+
+
+      const recent = document.querySelector("#recent");
+      const referral = document.querySelector("#referral");
+
+
+      const table1 = document.querySelector("#table1");
+      const table2 = document.querySelector("#table2");
+
+
+      const bg1 = document.querySelector(".bg");
+      const bg2 = document.querySelector(".bg2");
+
+      function recent_() {
+        table2.style.display = "none";
+        table1.style.display = "block";
+        recent.style.borderBottom = "2px solid green"
+        referral.style.borderBottom = "none"
+        
+      }
+      function referral_() {
+        table1.style.display = "none";
+        table2.style.display = "block";
+        referral.style.borderBottom = "2px solid green"
+        recent.style.borderBottom = "none"
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remix Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- style CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="side-bar">
+        <div class="top-bar">
+          <i class="ri-close-fill close" onclick="toggle_()"></i>
+          <div class="logo">
+            <img src="img/logo.png" alt="" />
+            <div class="brand-name">Pine Leaf</div>
+          </div>
+          <div class="search search2">
+            <i class="ri-search-2-line"></i>
+            <p>Search Here</p>
+          </div>
+          <div class="pages">
+            <div>
+              <a class="page" href="index.html">
+                <i class="ri-dashboard-fill"></i>
+                <p>Dashboard</p>
+              </a>
+            </div>
+            <div>
+              <a class="page active" href="properties.html">
+                <i class="ri-community-fill"></i>
+                <p>Properties</p>
+              </a>
+            </div>
+            <div>
+              <a class="page" href="transaction.html">
+                <i class="ri-file-list-line"></i>
+                <p>Transaction</p>
+              </a>
+            </div>
+            <div>
+              <a class="page" href="profile.html">
+                <i class="ri-user-3-fill"></i>
+                <p>Profile</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-bar">
+          <div class="log-out page">
+            <i class="ri-logout-circle-r-line"></i>
+            <p>Log Out</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="head">
+          <i class="ri-menu-line burger" onclick="burger_()"></i>
+          <div class="search">
+            <i class="ri-search-2-line"></i>
+            <p>Search Here</p>
+          </div>
+          <div class="notify">
+            <i class="ri-notification-3-fill"></i>
+            <img src="img/Ellipse 28.png" alt="" />
+          </div>
+        </div>
+
+        <h4>Details</h4 >
+        <div class="main-body p-details">
+          <div class="detail">
+            <div class="review">
+              <div class="images">
+                <div class="img-s">
+                  <img src="img/img1.jpg" alt="" />
+                </div>
+                <div class="img-e">
+                  <img src="img/img2.jpg" alt="" />
+                  <img src="img/img3.jpg" alt="" />
+                </div>
+              </div>
+              <div class="descriptions">
+                <div class="apartment">
+                  <div class="name">
+                    <p>Star Sun Island</p>
+                    <small
+                      ><i class="ri-map-pin-3-fill"></i>
+                      <span>0001/2 RT Letda</span></small
+                    >
+                  </div>
+                  <div class="Rate">
+                    <div class="stars">
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                    </div>
+                    <div class="price">
+                      <p>Price</p>
+                      <p>
+                        <strong
+                          >$90/<span style="font-weight: 400"
+                            >Plot</span
+                          ></strong
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4>Descriptions</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                    dolorem iure quo illum mollitia veritatis, non amet eos
+                    odio. Quos dignissimos repellat nisi quaerat deleniti.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="agents">
+              <div class="agent">
+                <img src="img/Ellipse 28.png" alt="" />
+                <p><strong>Jayden Hudlum</strong></p>
+                <span>Agent</span>
+                <p>
+                  <i class="ri-map-pin-3-fill"></i> <span>0001/2 RT Letda</span>
+                </p>
+                <p>12 Properties</p>
+                <div class="buttons">
+                  <div class="button message">
+                    <i class="ri-chat-1-fill"></i> Mesage
+                  </div>
+                  <div class="call button">
+                    <i class="ri-phone-fill"></i> Call
+                  </div>
+                </div>
+              </div>
+              <div class="maps">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15857.732474111326!2d3.4397002290303704!3d6.4666881177290945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf48e1f7f0595%3A0xd636bdb81fb9e5e9!2sBanana%20Island!5e0!3m2!1sen!2sng!4v1690202467270!5m2!1sen!2sng"
+                  width="200"
+                  height="200"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+
+                <div class="button book">Buy Now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const sideBar = document.querySelector(".side-bar");
+
+      const burger = document.querySelector(".burger");
+      const toggle = document.querySelector(".toggle");
+
+      function burger_() {
+        sideBar.style.display = "block";
+      }
+      function toggle_() {
+        sideBar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remix Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- style CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="side-bar">
+        <div class="top-bar">
+          <i class="ri-close-fill close" onclick="toggle_()"></i>
+          <div class="logo">
+            <img src="img/logo.png" alt="" />
+            <div class="brand-name">Pine Leaf</div>
+          </div>
+          <div class="search search2">
+            <i class="ri-search-2-line"></i>
+            <p>Search Here</p>
+          </div>
+          <div class="pages">
+            <div ><a class="page active" href="index.html">
+              <i class="ri-dashboard-fill"></i>
+              <p>Dashboard</p> </a>
+            </div>
+            <div > <a class="page" href="properties.html">
+              <i class="ri-community-fill"></i>
+              <p>Properties</p>  </a>
+            </div>
+            <div > <a class="page" href="transaction.html">
+              <i class="ri-file-list-line"></i>
+              <p>Transaction</p> </a>
+            </div>
+            <div> <a class="page" href="profile.html">
+              <i class="ri-user-3-fill"></i>
+              <p>Profile</p> </a>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-bar">
+          <div class="log-out page">
+            <i class="ri-logout-circle-r-line"></i>
+            <p>Log Out</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="main">
+        <div class="head">
+          <i class="ri-menu-line burger" onclick="burger_()"></i>
+          <div class="search">
+            <i class="ri-search-2-line"></i>
+            <p>Search Here</p>
+          </div>
+          <div class="notify">
+            <i class="ri-notification-3-fill"></i>
+            <img src="img/Ellipse 28.png" alt="" />
+          </div>
+        </div>
+
+        <!-- Main Body -->
+        <div class="main-body">
+          <h3>Find Your Best Estate</h3>
+
+          <div class="body">
+            <div class="explore">
+              <div class="rent">
+                <i class="ri-building-fill"></i>
+                <select>
+                  <option>Rent a Building</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+              </div>
+
+              <div class="date">
+                <i class="ri-calendar-2-fill"></i>
+                <input type="date" />
+              </div>
+
+              <div class="location">
+                <i class="ri-map-pin-3-fill"></i>
+                <select>
+                  <option>Location</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+              </div>
+
+              <div class="explore-search">
+                <button>Search</button>
+              </div>
+            </div>
+
+
+
+
+            <div class="exploring">
+              <div class="card">
+                <div class="img"><img src="img/img1.jpg" alt="" /></div>
+                <div class="title">
+                  <strong>Star Sun Str</strong>
+                  <div class="price">$80</div>
+                </div>
+                <div class="location">
+                  <small
+                    ><i class="ri-map-pin-3-fill"></i>
+                    <p>0001/2 RT Letda</p></small
+                  >
+                  <div class="share">
+                    <i class="ri-share-forward-line"></i>
+                    <p>Share</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <div class="img"><img src="img/img1.jpg" alt="" /></div>
+                <div class="title">
+                  <strong>Star Sun Str</strong>
+                  <div class="price">$80</div>
+                </div>
+                <div class="location">
+                  <small
+                    ><i class="ri-map-pin-3-fill"></i>
+                    <p>0001/2 RT Letda</p></small
+                  >
+                  <div class="share">
+                    <i class="ri-share-forward-line"></i>
+                    <p>Share</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="img"><img src="img/img2.jpg" alt="" /></div>
+                <div class="title">
+                  <strong>Star Sun Str</strong>
+                  <div class="price">$80</div>
+                </div>
+                <div class="location">
+                  <small
+                    ><i class="ri-map-pin-3-fill"></i>
+                    <p>0001/2 RT Letda</p></small
+                  >
+                  <div class="share">
+                    <i class="ri-share-forward-line"></i>
+                    <p>Share</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="img"><img src="img/img3.jpg" alt="" /></div>
+                <div class="title">
+                  <strong>Star Sun Str</strong>
+                  <div class="price">$80</div>
+                </div>
+                <div class="location">
+                  <small
+                    ><i class="ri-map-pin-3-fill"></i>
+                    <p>0001/2 RT Letda</p></small
+                  >
+                  <div class="share">
+                    <i class="ri-share-forward-line"></i>
+                    <p>Share</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- More -->
+            <div class="more">
+              <div class="popular">
+                <p class="active">Popular</p>
+                <p>Recommended</p>
+                <p>Nearest</p>
+              </div>
+
+              <div class="cards">
+
+                <div class="card">
+                  <div class="img"><img src="img/img3.jpg" alt="" /></div>
+                  <div class="details">
+                    <p class="price">$80</p>
+                    <p><strong>Star Sun Str</strong></p>
+
+                    <small><i class="ri-map-pin-3-fill"></i>
+                      <p>0001/2 RT Letda Lorem, ipsum dolor.</p></small>
+                    <div class="share">
+                      <i class="ri-share-forward-line"></i>
+                      <p>Share</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img"><img src="img/img3.jpg" alt="" /></div>
+                  <div class="details">
+                    <div class="price">$80</div>
+                    <p><strong>Star Sun Str </strong></p>
+
+                    <small><i class="ri-map-pin-3-fill"></i>
+                      <p>0001/2 RT Letda Lorem, ipsum dolor.</p></small>
+                    <div class="share">
+                      <i class="ri-share-forward-line"></i>
+                      <p>Share</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img"><img src="img/img3.jpg" alt="" /></div>
+                  <div class="details">
+                    <p class="price">$80</p>
+                    <p><strong>Star Sun Str</strong></p>
+
+                    <small><i class="ri-map-pin-3-fill"></i>
+                      <p>0001/2 RT Letda Lorem, ipsum dolor.</p></small>
+                    <div class="share">
+                      <i class="ri-share-forward-line"></i>
+                      <p>Share</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img"><img src="img/img3.jpg" alt="" /></div>
+                  <div class="details">
+                    <div class="price">$80</div>
+                    <p><strong>Star Sun Str</strong></p>
+
+                    <small><i class="ri-map-pin-3-fill"></i>
+                      <p>0001/2 RT Letda</p></small>
+                    <div class="share">
+                      <i class="ri-share-forward-line"></i>
+                      <p>Share</p>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <script>
+        const sideBar = document.querySelector('.side-bar');
+
+        const burger = document.querySelector('.burger')
+        const toggle = document.querySelector('.toggle')
+
+
+
+        function burger_() {
+          sideBar.style.display = 'block';
+        }
+        function toggle_() {
+          sideBar.style.display = 'none';
+        }
+
+      </script>
+    </section>
+  </body>
+</html>
